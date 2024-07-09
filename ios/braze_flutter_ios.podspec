@@ -9,14 +9,11 @@ Pod::Spec.new do |s|
     s.license          = { :file => '../LICENSE' }
     s.author           = { 'Nixplay' => 'email@example.com' }
     s.source           = { :path => '.' }
-    s.ios.deployment_target = '13.0'
-    s.tvos.deployment_target = '13.0'
+    s.ios.deployment_target = '12.0'
+    s.tvos.deployment_target = '12.0'
     
     s.source_files = 'Classes/**/*'
     s.dependency 'Flutter'
-    s.dependency 'BrazeKit'
+    s.dependency 'BrazeKit', '~> 6.0'
     s.swift_version = '5.0'
-    
-    s.ios.dependency 'BrazeUI'
-    s.tvos.dependency 'BrazeUI'
   end
