@@ -1,0 +1,26 @@
+name: braze_flutter_ios
+description: "A custom braze flutter sdk for tvos"
+version: 0.0.1
+homepage: "www.braze.com"
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: BrazeFlutterIosPlugin
+      tvos:
+        pluginClass: BrazeFlutterIosPlugin
