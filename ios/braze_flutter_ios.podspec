@@ -11,10 +11,12 @@ Pod::Spec.new do |s|
     s.source           = { :path => '.' }
     s.ios.deployment_target = '12.0'
     s.tvos.deployment_target = '12.0'
-    
+    s.static_framework = true
+
     s.source_files = 'Classes/**/*'
     s.dependency 'Flutter'
     s.dependency 'BrazeKit', '~> 9.0.0'
     s.dependency 'BrazeUI', '~> 9.0.0'
+    
     s.swift_version = '5.0'
   end
