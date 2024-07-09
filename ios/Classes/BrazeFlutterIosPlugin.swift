@@ -2,7 +2,7 @@ import Flutter
 import UIKit
 import BrazeKit
 
-public class SwiftBrazeFlutterIosPlugin: NSObject, FlutterPlugin {
+public class BrazeFlutterIosPlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "braze_flutter_ios", binaryMessenger: registrar.messenger())
         let instance = SwiftBrazeFlutterIosPlugin()
